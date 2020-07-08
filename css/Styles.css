@@ -34,6 +34,65 @@ img {
     color: rgb(119, 119, 240);
 }
 
+.navbar2 ul {
+
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar2 li {
+
+    list-style: none;
+
+    padding: 1em;
+}
+
 .footer {
     background-color: rgb(21, 12, 27);
+}
+
+.filaflex {
+    display: flex;
+
+    max-width: 100%;
+    ;
+
+    margin: 0 2em 0px 2em;
+
+}
+
+.columnas-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 16.6%;
+    /*border: 1px solid;*/
+    padding: 2em;
+    opacity: 0.7;
+    filter: grayscale();
+    transition-duration: grayscale 200ms;
+
+    animation-name: traslacion;
+    animation-duration: 10s;
+
+    animation-iteration-count: infinite;
+
+}
+
+.columnas-6:hover {
+    filter: none;
+    opacity: 1;
+
+
+}
+
+.navbar2 {
+    display: flex;
+    background-color: grey;
+    border-bottom: grey solid;
 }

@@ -1,0 +1,9 @@
+@keyframes traslacion {
+    from {
+        transform: translate();
+    }
+
+    to {
+        transform: translate(-100VW);
+    }
+}
