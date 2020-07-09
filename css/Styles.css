@@ -56,6 +56,19 @@ img {
     background-color: rgb(21, 12, 27);
 }
 
+.relative {
+    position: relative;
+    ;
+}
+
+.abs {
+    position: absolute;
+    top: 0;
+}
+
+
+
+
 .filaflex {
     display: flex;
 
@@ -77,10 +90,7 @@ img {
     filter: grayscale();
     transition-duration: grayscale 200ms;
 
-    animation-name: traslacion;
-    animation-duration: 10s;
 
-    animation-iteration-count: infinite;
 
 }
 
