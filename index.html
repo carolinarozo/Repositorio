@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repositorio</title>
+    <link rel="shortcut icon" href="./imagenes/Indine-3d-reducida.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/Styles.css">
     <link rel="stylesheet" href="./css/Animaciones.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
@@ -25,23 +26,29 @@
 
             <img src="./imagenes/Indine-horizontalr-min.png" alt="logo">
         </div>
-        <ul>
-            <li><a href="">
+        <ul class="menu">
+            <li class="menuitem"><a href="">
 
                     HOME
                 </a>
-            </li>
-            <li><a href="">
+            </li class="menuitem">
+            <li class="menuitem"><a href="">
 
                     COMPAÑIA
                 </a>
-            </li>
-            <li><a href="">
+            </li class="menuitem">
+            <li class="menuitem posicion"><a href="">
 
-                    SERVICIOS
-                </a>
+                    SERVICIOS <span style="padding-left:10px"></span>
+                </a><i class="fas fa-caret-down"></i>
+                <ul class="submenu">
+                    <li><a href="">IOT Industrial</a> </li>
+                    <li><a href="">Tableros Eletrónicos</a></li>
+                    <li><a href="">Desarrollo Web</a></li>
+                </ul>
+
             </li>
-            <li><a href="">
+            <li class="menuitem"><a href="">
 
                     CONTACTO
                 </a>
@@ -49,7 +56,7 @@
         </ul>
     </nav>
     <main>
-        <div class="relative">
+        <div class="relative cortada">
 
             <div class="filaflex">
 

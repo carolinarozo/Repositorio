@@ -1,5 +1,5 @@
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,9 +11,12 @@ img {
     max-width: 100%;
 }
 
-
+.main {
+    max-width: 1440px;
+}
 
 .navbar1 {
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +41,7 @@ img {
 }
 
 .navbar2 {
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     background-color: grey;
@@ -46,7 +50,7 @@ img {
     margin: auto;
 }
 
-.navbar2 ul {
+.menu {
 
     display: flex;
     text-decoration: none;
@@ -61,7 +65,7 @@ img {
     color: white;
 }
 
-.navbar2 li {
+.menuitem {
     display: flex;
     align-items: center;
     list-style: none;
@@ -73,8 +77,33 @@ img {
 
 }
 
-.navbar2 li:hover {
+.menuitem:hover {
     border-bottom: solid rgb(21, 12, 27);
+}
+
+
+.posicion {
+    position: relative;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: grey;
+    z-index: 2;
+}
+
+.menuitem:hover>.submenu {
+    display: block;
+}
+
+.submenu li:hover {
+    border-bottom: 1px solid rgb(21, 12, 27);
+    padding: 10px;
 }
 
 .footer {
@@ -84,6 +113,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cortada {
+    overflow: hidden;
 }
 
 .relative {
@@ -104,6 +137,7 @@ img {
 .filaflex {
     display: flex;
 
+
     max-width: 100%;
     ;
 
@@ -113,6 +147,7 @@ img {
 
 .columnas-2 {
     display: flex;
+
     justify-content: center;
     align-items: center;
     flex-basis: 16.6%;
