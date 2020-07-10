@@ -1,156 +1,46 @@
-@keyframes traslacion {
-    0% {
-
-        transform: translate(0vw);
-
+@keyframes animacion1 {
+    from {
+        transform: translate(0);
     }
 
-
-    7.14% {
-        transform: translate(16.6VW);
-    }
-
-    14.28% {
-        transform: translate(33.2vw);
-    }
-
-    21.43% {
-        transform: translate(49.8vw);
-    }
-
-    28.57% {
-        transform: translate(66.4vw);
-    }
-
-    35.71% {
-        transform: translate(83vw);
-    }
-
-    42.86% {
+    to {
         transform: translate(100vw);
-
     }
-
-    50% {
-        transform: translate(-100vw);
-        ;
-
-    }
-
-    57.14% {
-        transform: translate(-83vw);
-
-    }
-
-
-
-    64.26% {
-        transform: translate(-66.4vw);
-    }
-
-    71.43% {
-        transform: translate(-49.8vw);
-    }
-
-    78.57% {
-        transform: translate(-33.2vw);
-    }
-
-
-    85.71% {
-        transform: translate(-16.6VW);
-    }
-
-    92.86% {
-
-        transform: translate(0vw);
-
-    }
-
 }
 
+@keyframes animacion2 {
+    from {
+        transform: translate(-100vw);
+    }
+
+    to {
+        transform: translate(0vw);
+    }
+}
+
+@keyframes animacion3 {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .anima1 {
-    animation-name: traslacion;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
+    z-index: 1;
 
-@keyframes traslacion2 {
-    0% {
-
-        transform: translate(-100vw);
-
-    }
-
-
-    7.14% {
-        transform: translate(-83VW);
-    }
-
-    14.28% {
-        transform: translate(-66.4vw);
-    }
-
-    21.43% {
-        transform: translate(-49.8vw);
-    }
-
-    28.57% {
-        transform: translate(-33.2vw);
-    }
-
-    35.71% {
-        transform: translate(-16.6vw);
-    }
-
-    42.86% {
-        transform: translate(0vw);
-
-    }
-
-    50% {
-        transform: translate(16.6vw);
-        ;
-
-    }
-
-    57.14% {
-        transform: translate(33.2vw);
-
-    }
-
-
-
-    64.26% {
-        transform: translate(49.8vw);
-    }
-
-    71.43% {
-        transform: translate(66.4vw);
-    }
-
-    78.57% {
-        transform: translate(83vw);
-    }
-
-
-    85.71% {
-        transform: translate(100vw);
-    }
-
-    92.86% {
-
-        transform: translate(-100vw);
-
-    }
+    animation: animacion1 30s infinite linear;
 
 }
 
 .anima2 {
-    animation-name: traslacion2;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: animacion2 30s infinite linear;
+
+
+}
+
+.anima3 {
+    animation: animacion3 2s;
 }
